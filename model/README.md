@@ -1,5 +1,6 @@
 # Interaction model
 This repository contains the data and code used to test interaction hypothesis with two-pathogen transmission model
+<img width="862" alt="Screen Shot 2022-08-25 at 4 04 42 PM" src="https://user-images.githubusercontent.com/47227610/186758259-ee71beaa-a7e3-408d-b024-8b89b3dacdb3.png">
 
 ## Data
 
