@@ -299,7 +299,7 @@ modelfit_meas<-function(data = inc_data_add,res_hhs){
     drop_na()-> traj_fit_withdata
   
   data.frame(
-    R2 = R2(log(traj_fit_withdata$cases.x+1),log(traj_fit_withdata$cases.y+1)),
+    #R2 = R2(log(traj_fit_withdata$cases.x+1),log(traj_fit_withdata$cases.y+1)),
     RMSE = RMSE(traj_fit_withdata$cases.x,traj_fit_withdata$cases.y),
 
     HHSregion = traj_fit_withdata$HHSregion[1],

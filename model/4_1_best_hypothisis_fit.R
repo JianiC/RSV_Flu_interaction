@@ -3,9 +3,9 @@ source("./fit_functions.R", chdir = TRUE)
 ################
 ## plot with the best-fit model
  #########################################################################################
-res_arsv_bestmodel<-list.files(path="pomp_longphi_result/best_model_rsva/",pattern=".rds")
+res_arsv_bestmodel<-list.files(path="model/result/best_model_rsva/",pattern=".rds")
 for (i in 1:length(res_arsv_bestmodel)){
-  load(paste("pomp_longphi_result/best_model_rsva/",res_arsv_bestmodel[i],sep=""))
+  load(paste("model/result/best_model_rsva/",res_arsv_bestmodel[i],sep=""))
   print(paste0("load ",res_arsv_bestmodel[i]))
 }
 

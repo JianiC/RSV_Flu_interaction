@@ -2,9 +2,9 @@
 ## plot the effect of different psi and chi value
 
 ## load pomp_module
-setwd("pomp_1201/res_analysis")
-source("./fit_functions.R", chdir = TRUE) 
-source("./util_funs.R", chdir = TRUE) 
+
+source("./model/fit_functions.R", chdir = TRUE) 
+source("./model/util_funs.R", chdir = TRUE) 
 ## load pomp module
 
 simulate_tss <- function(params, res_hhs=res_hhs3_arsv_coinfect, give_everything = FALSE, show_progress = TRUE,...) {

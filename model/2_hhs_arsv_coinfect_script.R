@@ -1,7 +1,7 @@
 # this script runs different functions to make sure that they are running alright
 
 # first load prerequisites
-source("./src.R", chdir = TRUE)
+source("./model/src.R", chdir = TRUE)
 
 ## specify the virus and HHS region
 
