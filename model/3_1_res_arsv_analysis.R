@@ -8,7 +8,7 @@ system("ulimit -n 1000")
 setwd("/Users/jianichen/Dropbox/RSV_flu/RSV_flu_git/pomp_1201/res_analysis")
 source("./fit_functions.R", chdir = TRUE) 
 #########################################################################################
-  res_arsv_coinfect<-list.files(path="pomp_longphi_result/res_arsv_coinfect/",pattern=".rds")
+  res_arsv_coinfect<-list.files(path="model/result/res_arsv_coinfect/",pattern=".rds")
   for (i in 1:length(res_arsv_coinfect)){
     load(paste("pomp_longphi_result/res_arsv_coinfect/",res_arsv_coinfect[i],sep=""))
     print(paste0("load ",res_arsv_coinfect[i]))
@@ -35,7 +35,7 @@ source("./fit_functions.R", chdir = TRUE)
   #########################################################################################  
   
   
-  res_arsv_neutral<-list.files(path="pomp_longphi_result/res_arsv_neutral/",pattern=".rds")
+  res_arsv_neutral<-list.files(path="model/result/res_arsv_neutral/",pattern=".rds")
   for (i in 1:length(res_arsv_neutral)){
     load(paste("pomp_longphi_result/res_arsv_neutral/",res_arsv_neutral[i],sep=""))
     print(paste0("load ",res_arsv_neutral[i]))
@@ -59,7 +59,7 @@ source("./fit_functions.R", chdir = TRUE)
   
   #########################################################################################   
   
-  res_arsv_psi<-list.files(path="pomp_longphi_result/res_arsv_psi/",pattern=".rds")
+  res_arsv_psi<-list.files(path="model/result/res_arsv_psi/",pattern=".rds")
   for (i in 1:length(res_arsv_psi)){
     load(paste("pomp_longphi_result/res_arsv_psi/",res_arsv_psi[i],sep=""))
     print(paste0("load ",res_arsv_psi[i]))
@@ -82,7 +82,7 @@ source("./fit_functions.R", chdir = TRUE)
   #########################################################################################   
   
   
-  res_arsv_chi<-list.files(path="pomp_longphi_result/res_arsv_chi/",pattern=".rds")
+  res_arsv_chi<-list.files(path="model/result/res_arsv_chi/",pattern=".rds")
   for (i in 1:length(res_arsv_chi)){
     load(paste("pomp_longphi_result/res_arsv_chi/",res_arsv_chi[i],sep=""))
     print(paste0("load ",res_arsv_chi[i]))
