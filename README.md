@@ -1,4 +1,4 @@
-# RSV_Flu_interaction_PNAS_2022
+# RSV_Flu_interaction_2022
 This repository contains the data and code used to analyze RSV and Flu interaction in the United States.
 
 ## Data
