@@ -15,12 +15,20 @@ source: https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html
 
 ## Instructions
 * In each folder:
-    - In the root directory, start with sepecific order.
+    - scripts to generate the figures each sections was name as main figure
     - This figure.R contains all figures used in manuscript.
+Fig1: 1_cortest.R was used to generated: Fig.1A Fig.1B, Fig.S1 and Table S1
+    2_timelag_cortest.R was used to generated Fig.1C
+    The Demographic data can be donwload as described in the method section or contact the authors
+Fig2:  1_time_slice_pact_est.R was used to generated Fig.1 A
+2_genetic_effective_size was used to generated Fig.1 C, Fig.S3 and Fig.S4
+3_genetoc_corre was used to generated Table 1
+Beast folder contains the script for Bayeian phylogentic analysis
+Fig3: 1_1_dynamics simulation.R was used to generated Fig.3 A 
+1_2_point_simulate.R was used to generate to Fig.3B
+The parameters that are used for simulation was save under sim_data directory
+Fig4. contains the code that are use to fit the two-pathogen transmission model with HHS regional surveliance data.
+Fig5.
 
 
-## Additional Details
 
-* BEAST was used for the analysis displayed in Figure 2. For details, see [here](Genetic_analysis/README.md).
-* Time series analysis was conducted in [here](Data_prep/).
-* Parameter estimation for statistical model was conducted in R on a cluster due to computational time considerations. For conveneience, this step can be by-passed and all the plots can be built from pre-computed R objects (located in `model/results`). See [here](model/README.md) for additional details.

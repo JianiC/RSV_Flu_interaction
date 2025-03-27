@@ -4,10 +4,10 @@ library(ggpubr)
 library("lubridate")
 RSV_flu_surveliance <-read.csv("RSV_flu_combine.csv")
 
-pop<-read.csv("../../demographic-data/nst-est2019-alldata.csv")
-region_state<-read.csv("../../demographic-data/state_region.csv")
+pop<-read.csv("/demographic-data/nst-est2019-alldata.csv")
+region_state<-read.csv("/demographic-data/state_region.csv")
 
-RSV_flu_national<-read_csv("RSV_flu_combine_national.csv")
+RSV_flu_national<-read_csv("/demographic-data/RSV_flu_combine_national.csv")
 
 pop%>%
   left_join(region_state,by=c("US.STATE"="State_name"))%>%
